@@ -5,7 +5,7 @@ Credits to https://github.com/RedEM-RP/redemrp_menu_base
 
 # Information
 
-A Menu Base for RedEM:RP This script allows you create menu like RDR2.
+A Menu Base for TPZ-CORE.
 
 qadr version has changed CSS, image compatibility, and add nui focus control.
 
