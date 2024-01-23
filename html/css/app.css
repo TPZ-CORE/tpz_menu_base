@@ -1,5 +1,6 @@
 
 /* MADE BY SLIZZARN - DISCORD: slizzarn#1144 GITHUB: https://github.com/slizzarn-fivem */
+/* Modified by Nosmakos for TPZ-CORE */
 
 @font-face {
 	font-family: crock;
@@ -13,11 +14,12 @@
 
 .menu {
 	font-family: "crock", crock, serif;
-	min-width: 380px;
+	min-width: 17vw;
+	min-height: 25vw;
 	color: #ad9454;
 	position: absolute;
 	padding: 8px;
-	background-image: url(inkroller_1a.png);
+	background-image: url(default.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
@@ -60,9 +62,10 @@
 
 .menu .menu-items {
 	min-height: 275px;
-	max-height: 405px;
+	max-height: 400px;
 	overflow-y: hidden;
 	font-weight: 500;
+	margin-top: 2vw;
 }
 
 .menu .menu-items .menu-item {
@@ -76,7 +79,7 @@
   margin-top: 6px;
   margin-left:auto;
   margin-right:auto;
-  background-image: url(selection_box_bg_1d.png);
+  background-image: url(selection_box.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 110%;
@@ -85,7 +88,7 @@
 }
 
 .menu .menu-items .menu-item.selected {
-    background-image: url(selsected.png),url(selection_box_bg_1d.png);
+    background-image: url(selection_frame.png),url(selection_box.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
