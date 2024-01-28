@@ -44,13 +44,13 @@ local elements = {
      image="items/weapon_melee_hammer.png",
      descriptionimages = {
       {
-       src = "nui://redemrp_menu_base/html/items/cloth.png",
+       src = "nui://tpz_menu_base/html/items/cloth.png",
        text = "Kumaş",
        count = "x1"
       },
 
       {
-       src = "nui://redemrp_menu_base/html/items/woodenplanks.png",
+       src = "nui://tpz_menu_base/html/items/woodenplanks.png",
        count = "x5",
        text = "Ahşap"
       }
