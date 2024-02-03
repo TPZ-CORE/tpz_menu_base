@@ -16,9 +16,9 @@ This resource has been adopted for use by the RedEMRP Framework "reboot" of 2022
 
 # Installation
 
-1. Rename `tpz_menu_base-master` to `tpz_menu_base`
+1. When opening the zip file, open `tpz_menu_base-main` directory folder and inside there will be another directory folder which is called as `tpz_menu_base`, this directory folder is the one that should be exported to your resources (The folder which contains `fxmanifest.lua`).
 
-2. Add `ensure tpz_menu_base` before ensure `tpz_core` in the resources.cfg or server.cfg, depends where your scripts are located.
+2. Add `ensure tpz_menu_base` before `tpz_core` in the resources.cfg or server.cfg, depends where your scripts are located.
 
 
 # Usage
