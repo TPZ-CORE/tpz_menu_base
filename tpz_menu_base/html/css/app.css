@@ -25,7 +25,7 @@
 	font-family: "crock", crock, serif;
 	min-width: 20vw;
 	height: auto;
-	color: #ad9454;
+	color: #ffffff;
 	position: absolute;
 	padding: 35px;
 	background-image: url(inkroller_1a.png);
@@ -77,7 +77,7 @@
 .menu .head {
 	text-align: center;
 	height: 100px;
-	color: #ddc076;
+	color: #ffffff;
 	font-weight: 300;
 	font-size: 35px;
 	background-image: url(menu_header_1a.png);
@@ -148,7 +148,7 @@ i {
 }
 
 .desciption {
-	color: #ad9454;
+	color: #ffffff;
 	text-align: center;
 	font-size: 18px;
 	font-family: HapnaSlabSerif-Medium;
