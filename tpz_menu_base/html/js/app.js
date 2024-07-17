@@ -47,27 +47,14 @@
         <br>
     </div>`;
 
-    /*     function scrollToElement(element, block = "nearest", inline = "nearest") {
-            element?.scrollIntoView({
-                    behavior: "smooth",
-                    block: block,
-                    inline: inline, 
-            });
-        } */
-
-    function scrollToElement(element, block = "nearest") {
-        if (element) {
-            const menuContainer = document.querySelector(".menu .menu-items"); // Replace with your actual menu container's class or ID
+    function scrollToElement(element, block = "nearest", inline = "nearest") {
             const elementRect = element.getBoundingClientRect();
-            const containerRect = menuContainer.getBoundingClientRect();
-
-            if (elementRect.bottom > containerRect.bottom) {
-                menuContainer.scrollTop += elementRect.bottom - containerRect.bottom;
-            } else if (elementRect.top < containerRect.top) {
-                menuContainer.scrollTop -= containerRect.top - elementRect.top;
-            }
+            element.scrollIntoView({
+                    behavior: "auto",
+                    block: "end",
+                    inline: "nearest", 
+            });
         }
-    }
 
     window.MenuData = {};
     MenuData.ResourceName = "tpz_menu_base";
@@ -79,6 +66,9 @@
 
     MenuData.open = function (namespace, name, data) {
         lastmenu = data.lastmenu;
+        if (lastmenu == null) {
+                            lastmenu = "";
+		}
         if (typeof MenuData.opened[namespace] == "undefined") {
             MenuData.opened[namespace] = {};
         }

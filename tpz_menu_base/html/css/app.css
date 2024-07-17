@@ -25,7 +25,7 @@
 	font-family: "crock", crock, serif;
 	min-width: 20vw;
 	height: auto;
-	color: #ffffff;
+	color: #fff;
 	position: absolute;
 	padding: 35px;
 	background-image: url(inkroller_1a.png);
@@ -77,7 +77,7 @@
 .menu .head {
 	text-align: center;
 	height: 100px;
-	color: #ffffff;
+	color: #fff;
 	font-weight: 300;
 	font-size: 35px;
 	background-image: url(menu_header_1a.png);
@@ -148,7 +148,6 @@ i {
 }
 
 .desciption {
-	color: #ffffff;
 	text-align: center;
 	font-size: 18px;
 	font-family: HapnaSlabSerif-Medium;
@@ -251,7 +250,7 @@ i {
 
 .menu.align-center {
 	left: 50%;
-	top: 40;
+	top: 50%;
 	transform: translate(-50%, -50%);
 }
 
@@ -297,7 +296,7 @@ i {
 
 @media screen and (min-width: 1920px) and (max-height: 1080px) {
 	.menu {
-		padding: 25px;
+		padding: 40px;
 		margin-top: -2%;
 	}
 
@@ -313,7 +312,7 @@ i {
 	.menu .menu-items {
 		min-height: 5vh;
 		max-height: 41.5vh;
-		inline-size: 399px;
+		inline-size: 403px;
 	}
 
 	#slider-label {
@@ -325,6 +324,20 @@ i {
 		min-height: 2.5vh;
 		font-size: 16px;
 	}
+
+	.grid-item {
+		width: 75px;
+		height: 75px;
+		padding: 12px;
+		margin-top: 5px;
+		margin-left: 1px;
+	}
+
+	.grid-container {
+		grid-template-columns: repeat(4, 75px);
+		grid-gap: 0px 25px;
+	}
+
 }
 
 @media (min-width:3840px) {
