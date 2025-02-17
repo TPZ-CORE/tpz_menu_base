@@ -305,3 +305,7 @@ end)
 exports("GetMenuData", function()
     return MenuData
 end)
+
+exports('UpdateCurrentSubtextDescription', function(inputDescription)
+    SendNUIMessage({ ak_menubase_action = 'updateSubtextDescription', description = inputDescription })
+end)
