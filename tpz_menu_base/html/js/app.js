@@ -263,6 +263,12 @@
                 break;
             }
 
+            case "updateSubtextDescription": {
+
+                $(".descriptions").text(data.description);
+                break;
+            }
+
             case "controlPressed": {
                 switch (data.ak_menubase_control) {
                     case "ENTER": {
