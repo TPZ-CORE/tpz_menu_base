@@ -2,7 +2,7 @@
     let MenuTpl = `
     <div id="menu_{{_namespace}}_{{_name}}" class="menu{{#align}} align-{{align}}{{/align}}">
         <div class="head"><span>{{{title}}}</span></div>
-        <div class="desciptions">{{{subtext}}}</div>
+        <div class="descriptions">{{{subtext}}}</div>
         <div class="topline"></div>
         <div class="menu-items">
             {{#isGrid}}
@@ -41,7 +41,7 @@
             {{#selected}}
                 <div class="options-amount">{{{list_id}}}/{{{list_max}}}</div>
                 <br>
-                <div class="desciption">{{{desc}}}</div>
+                <div class="description">{{{desc}}}</div>
             {{/selected}}
         {{/elements}}
         <br>
