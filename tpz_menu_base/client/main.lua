@@ -156,10 +156,16 @@ function MenuData.CloseAll()
     end
 end
 
---[[ function MenuData.LastSelected(type, namespace, name)
+function MenuData.GetLastSelectedIndexes()
+    return MenuData.LastSelectedIndex
+end
+
+function MenuData.ResetLastSelectedIndex(type, namespace, name)
     local menuKey = type .. "_" .. namespace .. "_" .. name
-    return MenuData.LastSelectedIndex[menuKey] or 0
-end ]]
+    MenuData.LastSelectedIndex[menuKey] = 0
+
+    SendNUIMessage({ ak_menubase_action = 'resetLastSelectedIndex', namespace = namespace, name = name })
+end
 
 function MenuData.GetOpened(type, namespace, name)
     for i = 1, #MenuData.Opened, 1 do
