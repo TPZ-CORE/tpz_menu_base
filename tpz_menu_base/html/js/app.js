@@ -269,6 +269,11 @@
                 break;
             }
 
+            case 'resetLastSelectedIndex': {
+                MenuData.pos[data.namespace][data.name] = 0;
+                break;
+            }
+			
             case "controlPressed": {
                 switch (data.ak_menubase_control) {
                     case "ENTER": {
