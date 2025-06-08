@@ -270,7 +270,11 @@
             }
 
             case 'resetLastSelectedIndex': {
-                MenuData.pos[data.namespace][data.name] = 0;
+
+                if (MenuData.pos[data.namespace]) {
+                    MenuData.pos[data.namespace][data.name] = 0;
+                }
+
                 break;
             }
 			
