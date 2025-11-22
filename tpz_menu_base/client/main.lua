@@ -315,3 +315,24 @@ end)
 exports('UpdateCurrentSubtextDescription', function(inputDescription)
     SendNUIMessage({ ak_menubase_action = 'updateSubtextDescription', description = inputDescription })
 end)
+
+local CLOSED_MENU = false
+
+Citizen.CreateThread(function()
+
+    while true do 
+       
+        Wait(1200)
+
+        if not IsEntityDead(PlayerPedId()) and CLOSED_MENU then 
+            CLOSED_MENU = false
+        end
+
+        if IsEntityDead(PlayerPedId()) and not CLOSED_MENU then 
+            MenuData.CloseAll()
+            CLOSED_MENU = true
+        end
+
+    end
+
+end)
