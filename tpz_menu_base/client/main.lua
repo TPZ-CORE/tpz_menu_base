@@ -316,6 +316,7 @@ exports('UpdateCurrentSubtextDescription', function(inputDescription)
     SendNUIMessage({ ak_menubase_action = 'updateSubtextDescription', description = inputDescription })
 end)
 
+
 local CLOSED_MENU = false
 
 Citizen.CreateThread(function()
@@ -329,10 +330,18 @@ Citizen.CreateThread(function()
         end
 
         if IsEntityDead(PlayerPedId()) and not CLOSED_MENU then 
+
             MenuData.CloseAll()
             CLOSED_MENU = true
+
+            TriggerEvent("tpz_menu_base:onForcedClosed")
         end
 
     end
 
+end)
+
+RegisterNetEvent("tpz_menu_base:onForcedClosed")
+AddEventHandler("tpz_menu_base:onForcedClosed", function()
+    -- todo nothing
 end)
