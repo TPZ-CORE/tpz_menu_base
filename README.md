@@ -80,6 +80,8 @@ end)
 
 You have to use the following event on your script when force-close has been triggered. Inside, you will clear all the desired data on force-close.
 
+In case you don't want it and breaks your scripts, you have to remove the code from the thead near the end of the client.
+
 ```lua
 AddEventHandler("tpz_menu_base:onForcedClosed", function() -- client event
     -- todo
