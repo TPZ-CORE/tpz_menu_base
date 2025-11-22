@@ -75,3 +75,13 @@ function(data, menu)
     menu.close()
 end)
 ```
+
+## How to use force close menu when player ped is dead.
+
+You have to use the following event on your script when force-close has been triggered. Inside, you will clear all the desired data on force-close.
+
+```lua
+AddEventHandler("tpz_menu_base:onForcedClosed", function() -- client event
+    -- todo
+end)
+```
